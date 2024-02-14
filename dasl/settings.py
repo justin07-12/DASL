@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+fj%(b@rgv-q=&n%98@)-0o2+!lqksftobh4b+#fd$#t3h&0x9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.herokuapp.com']
 
 
 # Application definition
@@ -114,7 +114,9 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
+CSRF_TRUSTED_ORIGINS = [
+'https://*.herokuapp.com'
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/

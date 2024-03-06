@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
-def index(request):
-    return HttpResponse("DASL homepage")
+from django.views.generic import TemplateView
+# Create your views here.
+class UserFilterView(TemplateView):
+    template_name = 'signs/index.html'

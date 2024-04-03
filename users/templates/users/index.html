@@ -7,5 +7,10 @@
     </head>
     <body>
         <h1 class="text-3xl font-bold underline">Users!</h1>
+        <ul>
+            {% for user in object_list %}
+            <li>{{ user.username }}</li>
+            {% endfor %}
+        </ul>
     </body>
 </html>

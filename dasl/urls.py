@@ -23,3 +23,7 @@ urlpatterns = [
     path("", include("signs.urls")),
     path("users/", include("users.urls")),
 ]
+
+admin.site.site_header = "DASL"
+admin.site.site_title = "DASL Admin Portal"
+admin.site.index_title = "Welcome to DASL"
